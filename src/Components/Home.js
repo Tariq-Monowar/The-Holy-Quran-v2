@@ -12,8 +12,6 @@ import { langugeName } from './LanguageName';
 import { TabTitle } from './TabTitle';
 
 
-
-
 const Home = () => {
 
     TabTitle("Holy Quran")
@@ -47,7 +45,7 @@ const Home = () => {
 
     //Search function. hear using filter function for searching data.
     const ifChanged = (e)=>{
-      let value = (e.target.value).toLowerCase().replace(/[0-9-. ]/g, "")
+      let value = (e.target.value).toLowerCase().replace(/[0-9-.;'"$@*&^%$#`~ ]/g, "")
 
       const FilterSura = data.filter(sura=>{ 
         var suraName = sura.transliteration.toLowerCase().replace(/[-' ]/g, "");
@@ -109,8 +107,8 @@ const Home = () => {
           <div onClick={toggleTheme} className='lightmoode'>
             {
               isDarkModeEnabled?
-              <MdLightMode />:
-              <MdDarkMode />
+              <MdDarkMode />:
+              <MdLightMode />
             } 
           </div> 
 
@@ -125,8 +123,6 @@ const Home = () => {
               })
             }
           </select>
-
-
         </div>
       </nav>
     
