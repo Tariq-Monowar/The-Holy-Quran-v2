@@ -1,0 +1,460 @@
+@font-face {
+  font-family: "Quranic";
+  src: url("./font/Al\ Majeed\ Quranic\ Font_shiped.ttf");
+}
+
+.light-thime{
+  --page-background: #fffbfb;
+  --navigation-background: #cacacac4;
+  --navLogo: #00495c;
+  --darke-light-mode: rgba(0, 0, 0, 0.822);
+  --waviy-header: #161616ef;
+  --waviy-header-downSide: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.219));
+  --headibg-description-color: #000;
+  --search-blockShadow:  rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  --search-bar-icon: #1616169a;
+  --SearchBar-text: #000;
+  --box-background-shadow: #62626238 1px 12px 27px -5px, #0000004d 3px 8px 16px -8px; /*#87878738 3px 4px 11px 4px, #00000033 4px 5px 7px 0px */
+  --box-background-color: hsla(0,0%,83%,.699); 
+  --box-text-colore: #000;
+  --box-tans-colore: rgb(92, 92, 92);
+  
+  --box-hover-bg-colore: rgba(212, 212, 212, 0.897);
+  --box-hover-name-color: #003253a9;
+  --box-hover-ar-name-color: #043d61c4;
+  --box-hober-ayat-Number: #ffff;
+  --ayat-number-color: #d5d5d5c9;
+
+  --ayat-navbar-hading: #004a5ce3;
+  --sura-name-color: #002b30;
+  --ayat-block-color: #002329;
+  --ayat-name-downSide: below -20px linear-gradient(transparent, #fffbfb33);
+  --ayat-box-shodow: rgb(181 181 181 / 32%) -2px 3px 5px 0px, rgb(84 84 84 / 30%) 4px 0px 13px 0px;
+  --ayat-box--background: #b4b8b961;
+  --ayat-box--background-sm: #b4b8b961;
+
+
+} 
+.dark-thime{
+  --page-background: #222e35;
+  --navigation-background: #111b21e8;
+  --navLogo: #ffffffc5;
+  --darke-light-mode: #ffffffcb;
+  --waviy-header: #ffffffdc;
+  --waviy-header-downSide: below -20px linear-gradient(transparent, rgba(255, 255, 255, 0.089));
+  --headibg-description-color: #fff;
+  --search-blockShadow: rgb(12 26 32 / 58%) -1px 2px 6px 0px, rgb(30 51 60 / 26%) 1px -1px 20px 8px;
+  --search-bar-icon: rgba(255, 255, 255, 0.747);
+  --SearchBar-text: #ffffffc9;
+  --box-background-shadow:  rgb(0 0 0 / 11%) 2px 6px 10px 0px, rgb(0 0 0 / 22%) -1px 5px 13px 0px;
+  --box-background-color: transparent;
+  --box-text-color: rgba(255, 255, 255, 0.658);
+  --box-tans-colore: rgb(128, 126, 126);
+
+  --box-hover-bg-colore:#ffffff14;
+  --box-hover-name-color: #ffffff;
+  --box-hover-ar-name-color: #ffffff;
+  --box-hober-ayat-Number: rgb(0, 0, 0);
+  --ayat-number-color: #dbdbdbe8;
+
+  --ayat-navbar-hading: #e3e6e7;
+  --sura-name-color: rgb(255, 255, 255);
+  --ayat-block-color: #fff;
+  --ayat-name-downSide: below -20px linear-gradient(transparent, #58849f0d);
+  --ayat-box-shodow: rgb(0 0 0 / 11%) -3px -5px 19px 2px, rgb(0 0 0 / 20%) 1px 3px 7px 0px;
+  --ayat-box--background: transparent;
+  --ayat-box--background-sm: #1f2a30;
+}
+
+
+
+
+
+body{
+  background: var(--page-background);
+}
+
+
+/*---------------------Nav Bar-----------------*/
+.navigation-Bar{
+  height: 10vh;
+  background: var(--navigation-background);
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  box-shadow: #000000a1 0px 0.5px 7px 0px;
+
+}
+.scrollNavber{
+  transition: .5s;
+  height: 8vh;
+  background: var(--navigation-background);
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: fixed;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  top: 0;
+  box-shadow: #000000a1 0px 0.5px 7px 0px;
+
+}
+/*--------------nav Logo--------------*/
+.page-logo{
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: var(--navLogo)
+}
+/* light and night mode----------------- */
+.lightmoode{
+  color: var(--darke-light-mode);
+  margin-top: 6px;
+  font-size: 23px;
+  margin-right: 20px;
+}
+
+/*---------------Language Change----------------*/
+.nav-element{
+  margin: 0px 20px; 
+}
+.nav-element{
+  display: flex;
+  border: 1px rgba(0, 3, 15, 0.116);
+}
+.nav-element .element{
+  color: var(--darke-light-mode);
+  width: 130px;
+  font-size: 17px;
+  padding: 2px 3px 3px 5px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: bolder;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 4px 0px;
+}
+.languageName{
+  background: transparent;
+  color:  #000;
+  padding: 10px 0px;
+  font-size: 18px;
+  background: transparent;
+  background-color: transparent;
+  font-family: 'Expletus Sans', cursive;
+}
+
+/*---------------------Header-------------------*/
+.header-section{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+
+/*---------------Animation Title--------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+.waviy {
+  position: relative;
+  -webkit-box-reflect: var(--waviy-header-downSide);
+  font-size: 40px;
+  margin: 30px 0px 0px 0px;
+}
+
+.waviy span {
+  font-family: 'Lobster', cursive;
+  position: relative;
+  display: inline-block;
+  animation: waviy 1.2s infinite;
+  animation-delay: calc(.1s * var(--i));
+  letter-spacing: -2px;
+  color: var(--waviy-header);
+  margin-bottom: 0px;
+  
+}
+@keyframes waviy {
+  0%,50%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+.space{
+    padding-right: 10px;
+}
+
+/*-----------description----------*/
+.description-box{
+  max-width: 500px;
+  color: var(--headibg-description-color);
+  /* font-family: 'Expletus Sans', cursive; */
+  /* font-family: 'Courgette', cursive; */
+  /* font-family: 'Marcellus', serif; */
+  font-family: 'Philosopher', sans-serif;
+  line-height: 22px;
+  /* font-weight: bold; */
+  text-align: center;
+}
+.description-box p{
+  padding: 0px 30px;
+  margin: 23px 0px;
+}
+
+/*-----------SearchBar------------*/
+.searchBar{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.searchBar input{
+  background: transparent;
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 6px 5px 7px 12px;
+  margin: 0px 0px 30px 0px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--search-blockShadow);
+  color: var(--SearchBar-text);
+  font-weight: 600;
+}
+.searchBar .icon{
+  font-size: 20px;
+  margin-left: -33px;
+  padding: 10px 5px 3px 5px;
+  font-weight: bold;
+  transform: rotate(80deg);
+  color: var(--search-bar-icon);
+}
+     
+     
+
+/*--------------------------section-------------------*/
+section{
+    display: grid;
+    grid-gap: 10px;
+    /* grid-auto-columns: 1fr; */
+}
+.CardLink{
+  text-decoration: none;
+  color: var(--box-text-color);
+  transition: .4s;
+}
+.CardLink:hover{
+  transform: scale(1.03);
+}
+.CardLink:hover .ayat-number{
+  transition: .3s;
+  background-color: var(--box-hover-name-color);
+  /* color: var(--box-hober-ayat-Number); */
+  color: var(--box-hober-ayat-Number);
+}
+.CardLink:hover .blogs{
+  background-color: var(--box-hover-bg-colore);
+  box-shadow: var(--box-background-shadow);
+}
+.CardLink:hover .sura-name{
+  color: var(--box-hover-name-color)
+}
+
+.CardLink:hover .ayat-arabic-name{
+  color: var(--box-hover-ar-name-color);
+}
+
+
+.blogs{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:5px;
+  padding-bottom: 5px;
+  background-color: var(--box-background-color);
+  margin: 10px;
+  /* box-shadow: 1px 3px 9px 1px #00000057; */
+  box-shadow: var(--box-background-shadow)
+} 
+.inner-blogs-left{
+  display: flex;
+}
+.ayat-number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  margin: 15px 17px 0px 20px;
+  background: var( --ayat-number-color);
+  color: rgba(0, 0, 0, 0.719);
+}
+.ayat-number p{
+  transform: rotate(-45deg);
+  font-weight: bolder;
+  font-size: 20px; 
+ 
+}
+.sura-name{
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 0.9;
+  font-weight: bold;
+}
+.sura-translation-name{
+  font-size: 10px;
+  font-weight: bolder;
+  color: var(--box-tans-colore)
+}
+.ayat-arabic-name{
+  font-family: 'Lobster', cursive;
+  margin-right: 10px;
+  font-weight: bolder;
+  line-height: 0.7;
+  text-align: center;
+}
+.total-ayat-number{
+  font-size: 10px;
+  font-weight: bolder;
+  color: var(--box-tans-colore);
+}
+
+@media screen and (min-width: 600px) {
+    section{
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+    }
+    article{
+      margin: 0px 5px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section{
+        grid-template-columns: auto auto auto;
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 520px) {
+    .blogs{
+      margin:0px 5px;
+      box-shadow:  1px 4px 8px 1px #00000052;
+    }
+    .blogs:hover{
+      box-shadow:  1px 4px 8px 1px #00000052;
+    }
+    .nav-element .element{
+     width: 110px;
+    }
+    .lightmoode{
+      margin-right: 9px;
+    }
+    .searchBar input{
+      height: 35px;
+    }
+    .searchBar .icon{
+     padding-top: 20px;
+    }
+}
+
+
+/*------------Lidding Component-----------*/
+/*----------Animation hr-------------*/
+.LoddingSet{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  
+}
+.animation-hr{
+    width: 340px;
+    margin: 0px auto;
+}
+.hr1{
+    animation: hr1 2s ease infinite;
+}
+@keyframes hr1 {
+     0% {
+       width: 15%;
+     }
+     50% {
+       width: 100%;
+     }
+     100% {
+       width: 15%;
+     }
+
+}
+
+.hr2{
+    animation: hr2 2s ease infinite;
+}
+@keyframes hr2 {
+     0% {
+       width: 100%;
+     }
+     50% {
+       width: 15%;
+     }
+     100% {
+       width: 100%;
+     }
+
+}
+.hr3{
+    margin-left: auto;
+    animation: hr3 2s ease infinite;
+}
+@keyframes hr3 {
+    0% {
+       width: 100%;
+     }
+     50% {
+       width: 15%;
+     }
+     100% {
+       width: 100%;
+     }
+
+}
+.hr4{
+    margin-left:  auto;
+    animation: hr4 2s ease infinite;
+}
+@keyframes hr4 {
+     0% {
+       width: 15%;
+     }
+     50% {
+       width: 100%;
+     }
+     100% {
+       width: 15%;
+     }
+
+}
+.animation-hr hr{
+    height: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right top,#d9d5d58c, #021b2873, #679bb5e0, #878787a6, #e1e1e1c2);
+    opacity: 100;
+    margin-bottom: 3px;
+    margin-top: 6px;
+    border: none;
+}

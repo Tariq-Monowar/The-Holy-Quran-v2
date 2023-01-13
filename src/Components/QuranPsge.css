@@ -1,0 +1,153 @@
+@import url("../App.css");
+
+@font-face {
+    font-family: "Quranic";
+    src: url("../font/Al\ Majeed\ Quranic\ Font_shiped.ttf");
+}
+
+.pageContainer{
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 10px;  
+}
+/*------------Navigation-------------*/
+.navigation{
+   font-family: 'Amiri', serif;
+   height: 10vh;
+   background-color: #adadad9d;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: #000000a1 0px 0.5px 7px 0px;
+}
+.nav-element{
+  margin: 0px 20px; 
+}
+.select-elements{ 
+  color: var(--darke-light-mode);
+  background: transparent;
+  width: 78px;
+  font-size: 15px;
+  padding: 2px 3px;
+  border-radius: 10px;
+  margin: 0px 10px 3px 10px;
+  font-family: 'Expletus Sans', cursive;
+  margin-top: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+.option{
+    color: black;
+    background-color: transparent;
+}
+
+.nav-center-content{
+    font-family: "Quranic";
+    font-size: 4vmin;
+    color: var(--ayat-navbar-hading);
+}
+
+.SuraName{
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "Quranic";
+    text-align: center;
+    color: var(--sura-name-color);
+    -webkit-box-reflect: var(--ayat-name-downSide);
+    line-height: 4.1rem;
+    margin: 80px 0px 50px 0px;
+}
+
+.GotoHome{
+    margin: 0px 20px;
+    font-size: 37px;
+    color: var(--navLogo);
+    transition: .3s;
+}
+.GotoHome:hover{
+    color: #43b3cf;
+    
+}
+
+.ayatBlog{
+    border-radius: 10px;
+    color: var(--ayat-block-color);
+    background-color: var(--ayat-box--background);
+    padding: 10px 25px;
+    margin: 10px 10px;
+    transition: .3s;
+    line-height: 2.5;
+    box-shadow: var( --ayat-box-shodow);
+  
+}
+.ayatBlog:hover{
+   background-color: var(--box-hover-bg-colore);
+   box-shadow: 0px 2px 7px 1px #00000057;
+   transform: scale(1.02);
+   /* #1f2a30 */
+}
+
+.ayatArabic{
+    font-family: "Quranic";
+    font-size: 33px; 
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 7px;
+    word-spacing: 5px;
+}
+.ayatTranslation{
+    line-height: 1.9;
+    font-family: 'Amiri', serif;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+.ArabicAyatNumbers{
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 600;
+}
+.AyatNumberID{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    .pageContainer{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .pageContainer{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pageContainer{
+        width: 100%;
+    }
+    .nav-center-content{
+        margin-right: -40px;
+        font-size: 5.2vmin;
+    }
+    .select-elements{
+        margin-right: 5px;
+    }
+    .ayatBlog{ 
+        padding: 10px 15px;
+        margin: 10px 10px;
+    }
+    .ayatArabic{
+        font-size: 25px;
+    } 
+    .ayatTranslation{
+        font-size: 16px;
+    } 
+    .ayatBlog:hover{
+        background-color: var(--ayat-box--background-sm);  
+    }
+    .GotoHome{
+        margin: 0px 4px 0px 7px;
+    }
+}
+
+/*  https://urdunigaar.com/download-quranic-font-quran-standard-font-islamic-fonts/ */
