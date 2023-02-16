@@ -12,7 +12,7 @@ The Holy Quran v2 website comes equipped with a range of features that make it a
 - Surahs: The website contains all the surahs of the Quran, allowing users to read the Quran in its entirety.
 - API: The website offers an npm API for developers who wish to integrate the website's content into their own applications.
 ### How to use the website
-Using the Holy Quran v2 website is easy. Simply visit the website and choose your preferred language and mode from the options provided. You can then navigate to any surah or ayah by selecting the appropriate chapter from the list on the left-hand side of the screen. The website's easy sourcing system allows you to find specific verses quickly, and the audio feature allows you to listen to the recitation of the Quranic verses in Arabic.
+Using the Holy Quran v2 website is easy. Simply visit the website and choose your preferred language and mode from the options provided. You can then navigate to any surah or ayah by selecting the appropriate chapter from the list on the left-hand side of the screen. The website's easy sourcing system allows you to find specific verses quickly.
 
 ## Feedback
 We are continually working to improve the Holy Quran v2 website and welcome any feedback you may have. If you encounter any issues or have suggestions for how we can make the website better, please let us know by emailing us at
