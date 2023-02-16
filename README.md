@@ -1,6 +1,6 @@
  project Link:- https://holy-quran-v2.netlify.app/
 
-Holy Quran v2 Website
+##Holy Quran v2 Website
 Welcome to the Holy Quran v2 website, a comprehensive online platform for reading and studying the Quran. With its range of features, user-friendly interface, and multiple language translations, this website is the perfect resource for anyone interested in deepening their understanding of this essential religious text.
 
 Features
