@@ -20,4 +20,4 @@ facebook:- https://www.facebook.com/people/Tariq-Monowar-Hossain/100080938471859
 Email:- 2003monowar@gmail.com
 
 ## Conclusion
-The Holy Quran v2 website is an invaluable resource for anyone interested in reading and studying the Quran. With its range of features, multiple language translations, and user-friendly interface, this website provides an ideal platform for deepening your understanding of this essential religious text. Whether you are a student of Islam, a researcher, or simply someone seeking to learn more about the Quran, the Holy Quran v2 website is an indispensable tool
+The Holy Quran v2 website is an invaluable resource for anyone interested in reading and studying the Quran. With its range of features, multiple language translations, and user-friendly interface, this website provides an ideal platform for deepening your understanding of this essential religious text. Whether you are a student of Islam, a researcher, or simply someone seeking to learn more about the Quran, the Holy Quran v2 website is an indispensable tool.
